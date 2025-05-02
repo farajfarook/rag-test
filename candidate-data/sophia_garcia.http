@@ -1,0 +1,57 @@
+### Sophia Garcia - Candidate Information
+
+### Add profile information for Sophia Garcia
+POST http://localhost:8000/add_documents
+Content-Type: application/json
+
+{
+    "candidate_name": "Sophia Garcia",
+    "texts": [
+        "Candidate: Sophia Garcia - Associate Product Manager at carsales.com.au. Based in Melbourne, Victoria, Australia.",
+        "Summary: Technical Product Manager with 3 years of experience driving delivery of customer-centric, data-driven solutions across B2B platforms. Leveraging a 15-year background in software quality assurance, bringing a strong foundation in product stability, risk management, and delivery excellence. Proven success in managing complex system migrations, leading cross-functional teams, and launching impactful features. Passionate about mentoring emerging talent and fostering a collaborative team culture.",
+        "Current Role: Associate Product Manager at carsales.com.au (May 2022 - Present). Working in Richmond, Victoria, Australia.",
+        "Previous Role at carsales: Senior Quality Assurance Engineer (Jul 2016 - Jul 2022) in Melbourne, Australia. Total tenure at carsales.com.au: 8 years 11 months.",
+        "Previous Experience: Senior Agile Test Analyst at Sensis (Feb 2011 - Nov 2013), Agile Tester at Superpartners (Oct 2009 - Feb 2011), Test Lead/Analyst at Members Equity Bank (May 2007 - Oct 2009), Consultant at DWS (Apr 2007 - Oct 2009).",
+        "Education: Bachelor of Computing (Hons) from Deakin University (2004 - 2005), Bachelor of Computing in Software Engineering and Computer Science from Deakin University (2003 - 2004) completed with a Distinction Average.",
+        "Skills: Product Management, Software Quality Assurance, Agile Methodologies, Risk Management, Cross-functional Team Leadership, Complex System Migrations, B2B Platforms, Customer-centric Solutions, Data-driven Decision Making.",
+        "Career Transition: Successfully transitioned from a 15-year career in software quality assurance to product management, bringing unique perspective on product stability and risk management.",
+        "Work Arrangements: Has worked part-time for most of her tenure at carsales.com.au, demonstrating the company's flexible work arrangements and commitment to work-life balance.",
+        "Product Focus: Currently involved with LiveMarket, a market analysis tool for smarter pricing and acquisitions in the automotive sector, powered by carsales' data ecosystem."
+    ]
+}
+
+### Query about Sophia Garcia's product management experience
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What is Sophia Garcia's experience in product management?",
+    "use_rag": true
+}
+
+### Query about Sophia Garcia's quality assurance background
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Describe Sophia Garcia's background in software quality assurance.",
+    "use_rag": true
+}
+
+### Query about Sophia Garcia's education
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What is Sophia Garcia's educational background?",
+    "use_rag": true
+}
+
+### Compare with other candidates
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Compare Sophia Garcia's experience at carsales with Alex Thompson and Ethan Parker.",
+    "use_rag": true
+}

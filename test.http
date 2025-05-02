@@ -1,0 +1,42 @@
+### General test queries
+### Generate response using Falcon model
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Explain the concept of RAG (Retrieval-Augmented Generation) in AI"
+}
+
+### Test with a different prompt
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What are the main advantages of using FastAPI for building APIs?"
+}
+
+### Test error handling with an empty prompt
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": ""
+}
+
+### Test cross candidate query
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "list just the candidates names with experience in IFS",
+    "use_rag": true
+}
+
+### Test cross candidate query
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "list just the candidate names who have worked at PageUp. Just the names. nothing else",
+    "use_rag": true
+}

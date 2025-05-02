@@ -1,0 +1,56 @@
+### Maya Johnson - Candidate Information
+
+### Add profile information for Maya Johnson
+POST http://localhost:8000/add_documents
+Content-Type: application/json
+
+{
+    "candidate_name": "Maya Johnson",
+    "texts": [
+        "Candidate: Maya Johnson - Technology Leadership | Scaling delivery teams | Empowering career growth. Based in Melbourne, Victoria, Australia.",
+        "Summary: Leveraging over two decades of technical and people leadership experience, committed to building, growing, and mentoring highly effective engaged teams, who are connected to the business outcomes they drive. Strong understanding of people leadership, engineering, solution architecture and cloud solutions enables streamlined delivery, resulting in high-impact customer solutions achieving commercial business goals.",
+        "Current Role: Engineering Manager - Solo and New Business at MYOB (Mar 2024 - Present). Leading multiple cross-functional teams to optimize income and expenses for small and medium-sized enterprises. Delivering significant value through product features and services by streamlining business operations and enhancing financial management. Implementing strategies to improve invoicing processes and increase cash flow for businesses.",
+        "Previous Roles at MYOB: Engineering Manager - MYOB CRM (Oct 2023 - Mar 2024). Led rebranding of MYOB CRM, responsible for technical aspects and product delivery of a rapidly scaling CRM solution, facilitated modernisation of legacy products with CRM surface area and third-party integrations.",
+        "Previous Experience: Head Of Engineering at Tall Emu CRM (Mar 2022 - Mar 2024), Engineering Manager - Migrations at MYOB (Mar 2021 - Mar 2022), Principal Developer at PageUp (Mar 2019 - Mar 2021), Principal Engineer at BetEasy (Feb 2017 - Mar 2019), Team Lead - Front End Web at BetEasy (Dec 2015 - Feb 2017), Software Engineer - Frontend Web at BetEasy (Nov 2014 - Dec 2015).",
+        "Education: La Trobe University.",
+        "Technical Skills: JavaScript, Amazon Web Services (AWS), Iterative delivery, React.js, Microsoft Azure, .NET, NodeJS, Microsoft SQL Server, HTML5, CSS3, BackboneJS, TDD, Machine Learning, Artificial Intelligence (AI).",
+        "Management Skills: Technology Leadership, People Leadership, Solution Architecture, Cloud Solutions, Mentoring, Team Building, Strategic Planning, Technical Road Mapping, Engineering Best Practices.",
+        "Key Achievements: Led teams migrating 100K+ customers to Online SaaS offerings, led front-end technical uplift at PageUp, built and led delivery teams across multiple countries, facilitated outcome-driven architectural changes with strong cost savings on cloud spend, built BetEasy front end community and technical front end road map."
+    ]
+}
+
+### Query about Maya Johnson's leadership experience
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What is Maya Johnson's experience with team leadership?",
+    "use_rag": true
+}
+
+### Query about Maya Johnson's technical skills
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What technical skills does Maya Johnson have?",
+    "use_rag": true
+}
+
+### Query about Maya Johnson's front-end expertise
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Tell me about Maya Johnson's front-end development experience.",
+    "use_rag": true
+}
+
+### Compare with other candidates
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Compare Maya Johnson and Alex Thompson's leadership experience and approach.",
+    "use_rag": true
+}

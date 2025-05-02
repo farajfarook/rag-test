@@ -1,0 +1,57 @@
+### Olivia Martinez - Candidate Information
+
+### Add profile information for Olivia Martinez
+POST http://localhost:8000/add_documents
+Content-Type: application/json
+
+{
+    "candidate_name": "Olivia Martinez",
+    "texts": [
+        "Candidate: Olivia Martinez - Integration Specialist (Qlik Talend - Boomi) | Data Warehouse Expert (AWS Redshift) | IFS Technology Architect | IFS Technical Consultant | IFS Certified Specialist. Based in Ottawa, Ontario, Canada.",
+        "Current Role: ERP Systems Analyst - Interfaces at Cleaver-Brooks (Apr 2022 - Present). Working remotely with skills in Amazon Redshift and IFS.",
+        "Previous Roles: Technology Architect - IFS at Infosys (Dec 2021 - May 2022), Senior Service Delivery Manager at IFS (Mar 2021 - Dec 2021), Lead Software Engineer at Xitricon Private Limited (Sep 2019 - Feb 2021), Lead IFS Technical Consultant at International Maritime Industries (Sep 2019 - Feb 2021).",
+        "IFS Experience: Over 6.5 years of experience in Implementation and Upgrade projects. Managed multiple upgrade projects in a Tech Lead capacity. Experience with IFS Applications 7x, 8x, 9x, 10x, and IFS Cloud 21R1.",
+        "Technical Skills: IFS Applications (Forms Development, Base Server, Translations, BI development), IFS Report Designer, IFS Integration Development, IFS Aurena Development, IFS Marbel, PL/SQL, C#.NET, Java, oData, JSON, TypeScript, HTML5, Android/SQLite.",
+        "Data Expertise: AWS Redshift, Oracle Hyperion Planning Management (HPM), Oracle Hyperion Financial Management (HFM), Oracle Hyperion Strategic Finance (HSF), Oracle Essbase Development, Oracle Business Intelligence Enterprise Edition (OBIEE).",
+        "Integration Experience: Qlik, Talend, Boomi, RESTful API Integration, IFS Cloud Integration Platform.",
+        "Certifications: IFS Certified Specialist Developer (Application Forms Development) for IFS Applications 10, IFS Certified Associate Developer (Developer Essentials) for IFS Applications 10.",
+        "Education: Bachelor of Science (B.Sc.) Honors in Management Information Systems from University College Dublin (2010-2012) with 3.57 GPA, Higher Diploma in Computer Based Information Systems, IT and Business Systems from National Institute of Business Management (NIBM - Sri Lanka) (2009-2010).",
+        "Professional Summary: ERP consultant with broad technical and functional knowledge in IFS Applications (5+ years) and Oracle Hyperion (nearly 2 years). Competent Software Engineer with continuous self-updating on new technology advancements."
+    ]
+}
+
+### Query about Olivia Martinez's IFS experience
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What experience does Olivia have with IFS products?",
+    "use_rag": true
+}
+
+### Query about Olivia Martinez's integration experience
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What integration technologies is Olivia Martinez familiar with?",
+    "use_rag": true
+}
+
+### Query about Olivia Martinez's education
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What is Olivia Martinez's educational background?",
+    "use_rag": true
+}
+
+### Compare IFS knowledge with other candidates
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "How extensive is Olivia's experience with IFS compared to other candidates?",
+    "use_rag": true
+}

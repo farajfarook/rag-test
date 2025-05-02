@@ -1,0 +1,56 @@
+### Alex Thompson - Candidate Information
+
+### Add profile information for Alex Thompson
+POST http://localhost:8000/add_documents
+Content-Type: application/json
+
+{
+    "candidate_name": "Alex Thompson",
+    "texts": [
+        "Candidate: Alex Thompson - Engineering Manager at PageUp. Based in Melbourne, Victoria, Australia.",
+        "Summary: Highly motivated, results oriented Software Engineering Manager with over a decade of experience and proven track record in technology, delivery and people leadership.",
+        "Current Role: Engineering Manager at PageUp (Oct 2021 - Present). Responsibilities include: Leading multiple software development teams focused on short to mid-term revenue growth, mentoring and coaching managers, building high-performing teams, defining product and technology roadmaps, stakeholder management, implementing Agile processes, and advocating for platform health.",
+        "Previous Role: Engineering Team Lead at PageUp (Nov 2020 - Oct 2021). Planned and delivered $50M revenue-generating SaaS recruitment system, implemented agile practices, built stakeholder relationships, mentored engineers, and aligned team objectives with company vision.",
+        "Previous Experience: Engineering Team Lead at carsales.com.au (Apr 2019 - Nov 2020), Senior Software Engineer at carsales.com.au (Feb 2018 - Apr 2019), Senior Software Engineer at FLIP Group (Mar 2017 - Feb 2018), Senior Software Engineer at IFS (Oct 2014 - Feb 2017), Software Engineer at IFS (Nov 2010 - Oct 2014).",
+        "Education: Bachelor of Science in Computer Systems and Networking from Curtin University (2006-2009), Bachelor of Science in Physics and Statistics from University of Colombo (2007-2011).",
+        "Technical Skills: C#, Java, Oracle, Technology Leadership, Agile Delivery, Microservices Architecture, DevOps, Kanban.",
+        "Management Skills: Team Leadership, Mentoring, Coaching, Stakeholder Management, Agile Implementation, Product Roadmapping, Process Improvement.",
+        "Key Achievements: Led real-time market intelligence tool development for car dealers, re-architected legacy applications to microservices, built cloud-based logistics management platform, designed Field Service Management solutions."
+    ]
+}
+
+### Query about Alex Thompson's experience
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What is Alex Thompson's experience with team leadership?",
+    "use_rag": true
+}
+
+### Query about Alex Thompson's technical skills
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What technical skills does Alex Thompson have?",
+    "use_rag": true
+}
+
+### Query about Alex Thompson's educational background
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Tell me about Alex Thompson's education.",
+    "use_rag": true
+}
+
+### Compare with previous company
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Did Alex work at IFS? What was his role there?",
+    "use_rag": true
+}

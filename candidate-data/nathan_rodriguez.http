@@ -1,0 +1,56 @@
+### Nathan Rodriguez - Candidate Information
+
+### Add profile information for Nathan Rodriguez
+POST http://localhost:8000/add_documents
+Content-Type: application/json
+
+{
+    "candidate_name": "Nathan Rodriguez",
+    "texts": [
+        "Candidate: Nathan Rodriguez - Business Strategy, Development and Key accounts. Based in The Rocks, New South Wales, Australia.",
+        "Summary: Versatile and results-driven professional with over 15+ years of dynamic experience across diverse industries, including FMCG, Financial Services, Hospitality, Online Travel, E-commerce, Channel Management, and Property Management Solutions. Adept at navigating complex business landscapes with expertise in strategic management and operational efficiency.",
+        "Current Role: State Business Executive NSW/QLD at Imperial Brands PLC (Jul 2024 - Present). Responsibilities include: Strategizing and implementing state-level sales plans, leading high-performing sales teams, building relationships with key clients and stakeholders, contracting and negotiating trading terms, monitoring market dynamics, implementing promotional pricing strategies, managing budgets, overseeing supply chain processes, ensuring compliance, and delivering sales performance reports.",
+        "Previous Roles at Imperial Brands: Territory Manager (Aug 2023 - Jul 2024) in Brisbane, Queensland, and Territory Manager (Oct 2021 - Aug 2023) in North Queensland Australia. Delivered financials and market share goals, developed strategic relationships with customers, contributed to state volume, share and profit targets, utilized data-driven insights for market strategies, developed territory business plans, and implemented promotional pricing strategies.",
+        "Previous Experience: Trade Service Representative at BAT (Jul 2020 - Jun 2021), Consultant - Consumer Bank at Westpac Group (Apr 2020 - Jul 2020), Guest Experience Manager at AP Eagers Limited (Nov 2019 - Mar 2020), Head Of Operations at Bellboy.lk, Capital Maharaja Group (Dec 2018 - Jul 2019).",
+        "Education: Master of Business Administration - MBA AQF 7 from Universidad Empresarial de Costa Rica (Jul 2013 - Aug 2016), Diploma in Leadership and Management from Sherwood Institute of Australia (Nov 2015 - Nov 2016).",
+        "Skills: Customer Loyalty, Key Account Development, Negotiation, New Business Development, Sales Strategy, Business Development, Team Leadership, Sales, Account Management, Strategic Planning, Market Analysis, Budget Management, Supply Chain Management.",
+        "Industry Experience: FMCG, Financial Services, Hospitality, Online Travel, E-commerce, Channel Management, Property Management Solutions, Automotive.",
+        "Key Achievements: Successfully led state-level sales operations, developed and implemented commercial strategies for business growth, built strategic partnerships with corporate clients, designed operational procedures aligned with company strategy, and mentored sales teams to achieve monthly/annual targets."
+    ]
+}
+
+### Query about Nathan Rodriguez's leadership experience
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What is Nathan Rodriguez's experience with team leadership?",
+    "use_rag": true
+}
+
+### Query about Nathan Rodriguez's industry experience
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What industries has Nathan Rodriguez worked in?",
+    "use_rag": true
+}
+
+### Query about Nathan Rodriguez's educational background
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "What is Nathan Rodriguez's educational background?",
+    "use_rag": true
+}
+
+### Compare with other candidates
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Compare Nathan Rodriguez's business experience with the technical backgrounds of Alex Thompson and Maya Johnson.",
+    "use_rag": true
+}

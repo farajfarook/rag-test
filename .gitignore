@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+.history
+
+# Model files and caches
+*.bin
+*.pt
+*.pth
+*.h5
+*.onnx
+.cache/
+models/
+transformers_cache/
+hub/
+
+# Chroma DB
+chroma_db/
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Local development
+.DS_Store
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
