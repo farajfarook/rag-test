@@ -13,6 +13,7 @@ models = {
     "qwen-3b": "Qwen/Qwen2.5-3B-Instruct",
     "meta-3b": "meta-llama/Llama-3.2-3B-Instruct",
     "falcon-3b": "tiiuae/Falcon3-3B-Instruct",
+    "falcon-1b": "tiiuae/falcon3-1b-instruct",
     "dseek-7b": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
     "dseek-1.5b": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
 }
