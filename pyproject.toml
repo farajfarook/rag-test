@@ -1,0 +1,16 @@
+[project]
+name = "rag-test"
+version = "0.1.0"
+description = "A project demonstrating RAG with FastAPI and candidate data."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "fastapi>=0.95.0",
+    "uvicorn>=0.22.0",
+    "pydantic>=1.10.7",
+    "transformers>=4.30.0",
+    "torch>=2.0.0",
+    "sentence-transformers>=2.2.2",
+    "numpy>=1.24.0",
+    "chromadb>=0.4.10",
+]
