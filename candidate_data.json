@@ -1,0 +1,144 @@
+[
+    {
+        "candidate_name": "Alex Thompson",
+        "texts": [
+            "Candidate: Alex Thompson - Engineering Manager at PageUp. Based in Melbourne, Victoria, Australia.",
+            "Summary: Highly motivated, results oriented Software Engineering Manager with over a decade of experience and proven track record in technology, delivery and people leadership.",
+            "Current Role: Engineering Manager at PageUp (Oct 2021 - Present). Responsibilities include: Leading multiple software development teams focused on short to mid-term revenue growth, mentoring and coaching managers, building high-performing teams, defining product and technology roadmaps, stakeholder management, implementing Agile processes, and advocating for platform health.",
+            "Previous Role: Engineering Team Lead at PageUp (Nov 2020 - Oct 2021). Planned and delivered $50M revenue-generating SaaS recruitment system, implemented agile practices, built stakeholder relationships, mentored engineers, and aligned team objectives with company vision.",
+            "Previous Experience: Engineering Team Lead at carsales.com.au (Apr 2019 - Nov 2020), Senior Software Engineer at carsales.com.au (Feb 2018 - Apr 2019), Senior Software Engineer at FLIP Group (Mar 2017 - Feb 2018), Senior Software Engineer at IFS (Oct 2014 - Feb 2017), Software Engineer at IFS (Nov 2010 - Oct 2014).",
+            "Education: Bachelor of Science in Computer Systems and Networking from Curtin University (2006-2009), Bachelor of Science in Physics and Statistics from University of Colombo (2007-2011).",
+            "Technical Skills: C#, Java, Oracle, Technology Leadership, Agile Delivery, Microservices Architecture, DevOps, Kanban.",
+            "Management Skills: Team Leadership, Mentoring, Coaching, Stakeholder Management, Agile Implementation, Product Roadmapping, Process Improvement.",
+            "Key Achievements: Led real-time market intelligence tool development for car dealers, re-architected legacy applications to microservices, built cloud-based logistics management platform, designed Field Service Management solutions."
+        ]
+    },
+    {
+        "candidate_name": "Jordan Lee",
+        "texts": [
+            "Candidate: Jordan Lee - Senior Software Engineer at PageUp. Based in Melbourne, Victoria, Australia.",
+            "Summary: Experienced software engineer with a strong background in full-stack development and a passion for building scalable applications.",
+            "Current Role: Senior Software Engineer at PageUp (Jan 2020 - Present). Responsibilities include: Developing and maintaining web applications, collaborating with cross-functional teams, implementing best practices in software development, and mentoring junior developers.",
+            "Previous Role: Software Engineer at carsales.com.au (Jan 2018 - Dec 2019). Developed and maintained internal tools, improved application performance, and collaborated with product managers to define project scope.",
+            "Education: Bachelor of Information Technology from Monash University (2014-2017).",
+            "Technical Skills: JavaScript, React, Node.js, SQL, RESTful APIs, Agile Methodologies.",
+            "Key Achievements: Improved application performance by 30%, led a team of developers in a successful project launch."
+        ]
+    },
+    {
+        "candidate_name": "Daniel Wilson",
+        "texts": [
+            "Candidate: Daniel Wilson - Senior Principal Developer | Senior Technical Lead at PageUp. Based in Metro Manila, National Capital Region, Philippines.",
+            "Summary: A technical and systems oriented leader with experience in application and embedded software development. Has excellent skills in product development and delivery with a primary passion for people leadership.",
+            "Current Roles: Senior Technical Lead at Emapta Global (Jul 2022 - Present) with skills in Coaching and People Development. Also serving as Senior Principal Developer at Emapta Global (Jul 2022 - Present).",
+            "Previous Roles at Emapta Global: Principal Software Developer (Jan 2021 - Aug 2022).",
+            "Previous Experience: Software Engineering Manager at SeaChange International (Sep 2015 - Mar 2017), Principal Software Engineer at SeaChange International (Sep 2013 - Sep 2015), Solution Architect at iPointeast (Jan 2012 - Sep 2013), Principal Software Engineer at SeaChange International (Oct 2010 - Dec 2011), Project Manager at Canon Information Technologies Philippines (Jun 2003 - Aug 2010).",
+            "Leadership Experience: Coordinated activities and deliverables for multi-disciplinary technical teams including planning, estimating, scheduling, and tracking dependencies. Provided managerial direction and motivation to meet schedule and quality commitments. Conducted performance reviews, provided career growth opportunities, and recruited for open positions. Served as a 'hands-on' technical manager involved in actual development and implementation.",
+            "Technical Experience: Led development of next-generation User Interfaces for set-top boxes, desktop PCs, and mobile devices. Designed user interface implementations and UI development platforms. Created architectural solutions working with vendors and customers. Deep involvement in software development with focus on reusable components.",
+            "Project Management: Achieved effective completion of enterprise application-oriented projects. Worked with clients and investors to define product roadmaps, strategies, and timelines. Served as project manager during major deployments for critical clients.",
+            "Education: Bachelor's Degree in Computer Science from University of the Philippines (1999-2003) with GPA of 1.93. High School at University of the Philippines Rural High School (1996-1999).",
+            "Technical Skills: Software Architecture, UI Development, Java, XML, Ruby, Enterprise Applications, Embedded Systems.",
+            "Soft Skills: People Leadership, Coaching, Team Management, Performance Reviews, Career Development, Client Relations."
+        ]
+    },
+    {
+        "candidate_name": "Emma Collins",
+        "texts": [
+            "Candidate: Emma Collins - Data Analyst at TricorBraun. Based in Melbourne, Victoria, Australia.",
+            "Summary: A self-driven, data engineering professional with good communication and leadership skills with over twelve years of experience working in large-scale global enterprises specializing in ETL, data migration and data engineering with strong problem solving and analytical skills.",
+            "Personal Attributes: Excellent analytical and strong problem solving skills, quick learner and self-starter, positive attitude and adaptive to change, strong interpersonal and communication skills, and highly motivated team player.",
+            "Current Role: Data Analyst at TricorBraun (Jan 2025 - Present). Responsibilities include Microsoft Dynamics 365 Finance and Operations data management.",
+            "Previous Experience: Data Migration Consultant at Culligan Australia (Mar 2019 - Nov 2024) responsible for data migration from multiple legacy systems to new ERP systems, developing and using ETL tools for country rollouts and acquisitions. Software Engineer at Service Stream (Sep 2017 - Mar 2019) developing requirements/change requests and providing technical support for ERP systems.",
+            "IFS Experience: Senior Software Engineer at IFS (Oct 2015 - Jun 2017) attached to the consulting organization working with customer projects in the Scandinavian region with experience at customer sites in Sweden, Belgium, and Germany. Software Engineer at IFS (Jun 2012 - Sep 2015). Responsible for design and development of software according to specifications and quality standards, developing customizations for IFS APP 7.5, 8, 9 tracks and FSM, data migration, providing technical consultancy, and working as a team lead.",
+            "Earlier Career: Software Engineer Internship at CodeGen International (May 2011 - Nov 2011) developing an Android mobile application for the travel industry.",
+            "Education: Master of Science in Data Science from UNSW (Mar 2020 - Oct 2023) with Excellence grade, BSc in Engineering, Computer Engineering from University of Peradeniya (2008 - 2012).",
+            "Technical Skills: SQL, PL/SQL, ETL Tools, Microsoft SQL Server, Oracle Database, Microsoft Dynamics 365, Data Migration, Extract, Transform, Load (ETL), Data Modeling, R Programming Language.",
+            "Key Achievements: Led data migration projects for multiple country rollouts and acquisitions, provided technical consultancy at critical go-live situations, worked as a team lead on customer projects mentoring several developers, and configured IFS Applications according to customer requirements using custom objects."
+        ]
+    },
+    {
+        "candidate_name": "Ethan Parker",
+        "texts": [
+            "Candidate: Ethan Parker - Product Engineering CTO. Based in Greater Melbourne Area, Australia.",
+            "Summary: A pragmatic CTO who creates synergy between business objectives and technology. With over 12 years of experience in managing tech teams, Ethan knows how to drive results.",
+            "Current Role: Chief Technology Officer at Connexion Mobility (Nov 2023 - Present). Responsibilities include aligning people, technology, and business to deliver innovative, scalable products and leading a high-performing, empowered engineering culture.",
+            "Key Achievements at Current Role: Modernised engineering with standards, frameworks, and reusable templates; improved security posture, implemented SSO, and led ISO 27001:2022 certification; scaled a 30+ team into 5 platform teams with dedicated Lead Engineers; promoted growth mindset with structured learning and training budgets; championed product engineering and AI tools to boost velocity and impact; contributed to vendor strategy, product discovery, and GTM automation.",
+            "Previous Role at Connexion Mobility: Principal Engineer (May 2023 - Oct 2023). Defined engineering standards, frameworks, and best practices—driving pragmatic, high-impact solutions in close collaboration with leadership.",
+            "Previous Experience: Solutions Architect at carsales.com.au (Apr 2021 - Mar 2023), Senior Software Engineer at FanDuel (Jan 2021 - Apr 2021 and Jul 2019 - Nov 2020), Senior Software Engineer at Latitude Financial Services (Nov 2020 - Jan 2021).",
+            "Technical Leadership: Led architecture and development of a Mobility-as-a-Service (MaaS) platform; designed scalable, cost-efficient architecture using AWS Serverless and .NET Core; reduced chargebacks with AI/ML-based fraud detection; introduced evolvable architecture and layered service patterns; cut AWS costs by ~20% with smarter infrastructure and usage patterns.",
+            "Technical Skills: TypeScript, Node.js (NestJS), React, AngularJS, AWS Serverless, Serverless Framework, Localstack, PactJS, Playwright, .NET Core (C#), AWS (Lambda, DynamoDB, API Gateway, SageMaker, ECS Fargate, CloudWatch, X-Ray, EventBridge, SNS), GoLang, CI/CD with GitHub Actions and Jenkins.",
+            "Education: Executive MBA from Quantic School of Business and Technology (May 2024 - Jan 2026), BSc (Hons) in Computing from University of Portsmouth (2008 - 2009).",
+            "Leadership Approach: Isolates teams into Continuous Improvement and R&D, believing both require different mindset and approaches but both are absolutely necessary. Implements DevOps governance through tools like Atlassian Bitbucket dynamic pipelines to ensure security and efficiency across multiple repositories without additional team effort."
+        ]
+    },
+    {
+        "candidate_name": "Maya Johnson",
+        "texts": [
+            "Candidate: Maya Johnson - Technology Leadership | Scaling delivery teams | Empowering career growth. Based in Melbourne, Victoria, Australia.",
+            "Summary: Leveraging over two decades of technical and people leadership experience, committed to building, growing, and mentoring highly effective engaged teams, who are connected to the business outcomes they drive. Strong understanding of people leadership, engineering, solution architecture and cloud solutions enables streamlined delivery, resulting in high-impact customer solutions achieving commercial business goals.",
+            "Current Role: Engineering Manager - Solo and New Business at MYOB (Mar 2024 - Present). Leading multiple cross-functional teams to optimize income and expenses for small and medium-sized enterprises. Delivering significant value through product features and services by streamlining business operations and enhancing financial management. Implementing strategies to improve invoicing processes and increase cash flow for businesses.",
+            "Previous Roles at MYOB: Engineering Manager - MYOB CRM (Oct 2023 - Mar 2024). Led rebranding of MYOB CRM, responsible for technical aspects and product delivery of a rapidly scaling CRM solution, facilitated modernisation of legacy products with CRM surface area and third-party integrations.",
+            "Previous Experience: Head Of Engineering at Tall Emu CRM (Mar 2022 - Mar 2024), Engineering Manager - Migrations at MYOB (Mar 2021 - Mar 2022), Principal Developer at PageUp (Mar 2019 - Mar 2021), Principal Engineer at BetEasy (Feb 2017 - Mar 2019), Team Lead - Front End Web at BetEasy (Dec 2015 - Feb 2017), Software Engineer - Frontend Web at BetEasy (Nov 2014 - Dec 2015).",
+            "Education: La Trobe University.",
+            "Technical Skills: JavaScript, Amazon Web Services (AWS), Iterative delivery, React.js, Microsoft Azure, .NET, NodeJS, Microsoft SQL Server, HTML5, CSS3, BackboneJS, TDD, Machine Learning, Artificial Intelligence (AI).",
+            "Management Skills: Technology Leadership, People Leadership, Solution Architecture, Cloud Solutions, Mentoring, Team Building, Strategic Planning, Technical Road Mapping, Engineering Best Practices.",
+            "Key Achievements: Led teams migrating 100K+ customers to Online SaaS offerings, led front-end technical uplift at PageUp, built and led delivery teams across multiple countries, facilitated outcome-driven architectural changes with strong cost savings on cloud spend, built BetEasy front end community and technical front end road map."
+        ]
+    },
+    {
+        "candidate_name": "Nathan Rodriguez",
+        "texts": [
+            "Candidate: Nathan Rodriguez - Business Strategy, Development and Key accounts. Based in The Rocks, New South Wales, Australia.",
+            "Summary: Versatile and results-driven professional with over 15+ years of dynamic experience across diverse industries, including FMCG, Financial Services, Hospitality, Online Travel, E-commerce, Channel Management, and Property Management Solutions. Adept at navigating complex business landscapes with expertise in strategic management and operational efficiency.",
+            "Current Role: State Business Executive NSW/QLD at Imperial Brands PLC (Jul 2024 - Present). Responsibilities include: Strategizing and implementing state-level sales plans, leading high-performing sales teams, building relationships with key clients and stakeholders, contracting and negotiating trading terms, monitoring market dynamics, implementing promotional pricing strategies, managing budgets, overseeing supply chain processes, ensuring compliance, and delivering sales performance reports.",
+            "Previous Roles at Imperial Brands: Territory Manager (Aug 2023 - Jul 2024) in Brisbane, Queensland, and Territory Manager (Oct 2021 - Aug 2023) in North Queensland Australia. Delivered financials and market share goals, developed strategic relationships with customers, contributed to state volume, share and profit targets, utilized data-driven insights for market strategies, developed territory business plans, and implemented promotional pricing strategies.",
+            "Previous Experience: Trade Service Representative at BAT (Jul 2020 - Jun 2021), Consultant - Consumer Bank at Westpac Group (Apr 2020 - Jul 2020), Guest Experience Manager at AP Eagers Limited (Nov 2019 - Mar 2020), Head Of Operations at Bellboy.lk, Capital Maharaja Group (Dec 2018 - Jul 2019).",
+            "Education: Master of Business Administration - MBA AQF 7 from Universidad Empresarial de Costa Rica (Jul 2013 - Aug 2016), Diploma in Leadership and Management from Sherwood Institute of Australia (Nov 2015 - Nov 2016).",
+            "Skills: Customer Loyalty, Key Account Development, Negotiation, New Business Development, Sales Strategy, Business Development, Team Leadership, Sales, Account Management, Strategic Planning, Market Analysis, Budget Management, Supply Chain Management.",
+            "Industry Experience: FMCG, Financial Services, Hospitality, Online Travel, E-commerce, Channel Management, Property Management Solutions, Automotive.",
+            "Key Achievements: Successfully led state-level sales operations, developed and implemented commercial strategies for business growth, built strategic partnerships with corporate clients, designed operational procedures aligned with company strategy, and mentored sales teams to achieve monthly/annual targets."
+        ]
+    },
+    {
+        "candidate_name": "Olivia Martinez",
+        "texts": [
+            "Candidate: Olivia Martinez - Integration Specialist (Qlik Talend - Boomi) | Data Warehouse Expert (AWS Redshift) | IFS Technology Architect | IFS Technical Consultant | IFS Certified Specialist. Based in Ottawa, Ontario, Canada.",
+            "Current Role: ERP Systems Analyst - Interfaces at Cleaver-Brooks (Apr 2022 - Present). Working remotely with skills in Amazon Redshift and IFS.",
+            "Previous Roles: Technology Architect - IFS at Infosys (Dec 2021 - May 2022), Senior Service Delivery Manager at IFS (Mar 2021 - Dec 2021), Lead Software Engineer at Xitricon Private Limited (Sep 2019 - Feb 2021), Lead IFS Technical Consultant at International Maritime Industries (Sep 2019 - Feb 2021).",
+            "IFS Experience: Over 6.5 years of experience in Implementation and Upgrade projects. Managed multiple upgrade projects in a Tech Lead capacity. Experience with IFS Applications 7x, 8x, 9x, 10x, and IFS Cloud 21R1.",
+            "Technical Skills: IFS Applications (Forms Development, Base Server, Translations, BI development), IFS Report Designer, IFS Integration Development, IFS Aurena Development, IFS Marbel, PL/SQL, C#.NET, Java, oData, JSON, TypeScript, HTML5, Android/SQLite.",
+            "Data Expertise: AWS Redshift, Oracle Hyperion Planning Management (HPM), Oracle Hyperion Financial Management (HFM), Oracle Hyperion Strategic Finance (HSF), Oracle Essbase Development, Oracle Business Intelligence Enterprise Edition (OBIEE).",
+            "Integration Experience: Qlik, Talend, Boomi, RESTful API Integration, IFS Cloud Integration Platform.",
+            "Certifications: IFS Certified Specialist Developer (Application Forms Development) for IFS Applications 10, IFS Certified Associate Developer (Developer Essentials) for IFS Applications 10.",
+            "Education: Bachelor of Science (B.Sc.) Honors in Management Information Systems from University College Dublin (2010-2012) with 3.57 GPA, Higher Diploma in Computer Based Information Systems, IT and Business Systems from National Institute of Business Management (NIBM - Sri Lanka) (2009-2010).",
+            "Professional Summary: ERP consultant with broad technical and functional knowledge in IFS Applications (5+ years) and Oracle Hyperion (nearly 2 years). Competent Software Engineer with continuous self-updating on new technology advancements."
+        ]
+    },
+    {
+        "candidate_name": "Sophia Garcia",
+        "texts": [
+            "Candidate: Sophia Garcia - Associate Product Manager at carsales.com.au. Based in Melbourne, Victoria, Australia.",
+            "Summary: Technical Product Manager with 3 years of experience driving delivery of customer-centric, data-driven solutions across B2B platforms. Leveraging a 15-year background in software quality assurance, bringing a strong foundation in product stability, risk management, and delivery excellence. Proven success in managing complex system migrations, leading cross-functional teams, and launching impactful features. Passionate about mentoring emerging talent and fostering a collaborative team culture.",
+            "Current Role: Associate Product Manager at carsales.com.au (May 2022 - Present). Working in Richmond, Victoria, Australia.",
+            "Previous Role at carsales: Senior Quality Assurance Engineer (Jul 2016 - Jul 2022) in Melbourne, Australia. Total tenure at carsales.com.au: 8 years 11 months.",
+            "Previous Experience: Senior Agile Test Analyst at Sensis (Feb 2011 - Nov 2013), Agile Tester at Superpartners (Oct 2009 - Feb 2011), Test Lead/Analyst at Members Equity Bank (May 2007 - Oct 2009), Consultant at DWS (Apr 2007 - Oct 2009).",
+            "Education: Bachelor of Computing (Hons) from Deakin University (2004 - 2005), Bachelor of Computing in Software Engineering and Computer Science from Deakin University (2003 - 2004) completed with a Distinction Average.",
+            "Skills: Product Management, Software Quality Assurance, Agile Methodologies, Risk Management, Cross-functional Team Leadership, Complex System Migrations, B2B Platforms, Customer-centric Solutions, Data-driven Decision Making.",
+            "Career Transition: Successfully transitioned from a 15-year career in software quality assurance to product management, bringing unique perspective on product stability and risk management.",
+            "Work Arrangements: Has worked part-time for most of her tenure at carsales.com.au, demonstrating the company's flexible work arrangements and commitment to work-life balance.",
+            "Product Focus: Currently involved with LiveMarket, a market analysis tool for smarter pricing and acquisitions in the automotive sector, powered by carsales' data ecosystem."
+        ]
+    },
+    {
+        "candidate_name": "Liam Brown",
+        "texts": [
+            "Candidate: Liam Brown - Senior Software Engineer at PageUp. Based in Melbourne, Victoria, Australia.",
+            "Summary: Experienced software engineer with a strong background in full-stack development and a passion for building scalable applications.",
+            "Current Role: Senior Software Engineer at PageUp (Jan 2020 - Present). Responsibilities include: Developing and maintaining web applications, collaborating with cross-functional teams, implementing best practices in software development, and mentoring junior developers.",
+            "Previous Role: Software Engineer at carsales.com.au (Jan 2018 - Dec 2019). Developed and maintained internal tools, improved application performance, and collaborated with product managers to define project scope.",
+            "Education: Bachelor of Information Technology from Monash University (2014-2017).",
+            "Technical Skills: JavaScript, React, Node.js, SQL, RESTful APIs, Agile Methodologies.",
+            "Key Achievements: Improved application performance by 30%, led a team of developers in a successful project launch."
+        ]
+    }
+]
