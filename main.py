@@ -73,7 +73,7 @@ def generate(formatted_prompt):
 
 
 @app.post("/generate")
-async def generate(prompt):
+async def generate(prompt: str):
     try:
         # RETRIEVE Context from Vector Store
         retrieved_contexts = retrieve(prompt)
@@ -81,7 +81,7 @@ async def generate(prompt):
         formatted_prompt = augment(retrieved_contexts, prompt)
         # GENERATE the response using the model
         response = generate(formatted_prompt)
-        return response
+        return {"response": response, "retrieved_contexts": retrieved_contexts}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
