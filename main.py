@@ -57,6 +57,7 @@ def augment(retrieved_contexts, prompt):
 
 # GENERATE the response using the model
 def generate(formatted_prompt):
+    print(f"Formatted prompt: {formatted_prompt}")
     input_ids = tokenizer.encode(formatted_prompt, return_tensors="pt").to(model.device)
     with torch.no_grad():
         output = model.generate(
@@ -90,7 +91,7 @@ async def generate(request: GenerateRequest):
         formatted_prompt = augment(retrieved_contexts, prompt)
         # GENERATE the response using the model
         response = generate(formatted_prompt)
-        return {"response": response, "retrieved_contexts": retrieved_contexts}
+        return {"response": response}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
