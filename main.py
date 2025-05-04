@@ -21,7 +21,7 @@ try:
         torch_dtype=torch.float16,
         trust_remote_code=True,
     )
-    print("Model and tokenizer loaded successfully from {model_name}.")
+    print(f"Model and tokenizer loaded successfully from {model_name}.")
 except Exception as e:
     print(f"Error loading model or tokenizer: {e}")
     exit()
@@ -36,7 +36,8 @@ try:
             texts = candidate["texts"]
             merged_text = "\n\n".join(texts)
             vector_store.add_document(merged_text, candidate_name)
-    print("Candidate data loaded and added to vector store.")
+    count = vector_store.collection.count()
+    print(f"Candidate data loaded and added to vector store. Count: {count}")
 except Exception as e:
     print(f"An error occurred while loading candidate data: {e}")
     exit()
@@ -82,7 +83,7 @@ class GenerateRequest(BaseModel):
 
 # FastAPI endpoint for generating responses
 @app.post("/generate")
-async def generate(request: GenerateRequest):
+async def generate_api(request: GenerateRequest):
     try:
         prompt = request.prompt
         # RETRIEVE Context from Vector Store
