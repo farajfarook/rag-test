@@ -99,7 +99,7 @@ class GenerateRequest(BaseModel):
 async def generate_api(request: GenerateRequest):
     try:
         # RETRIEVE Context using AI-optimized query
-        retrieved_contexts = retrieve_advanced(request.prompt)
+        retrieved_contexts = retrieve(request.prompt)
         # AUGMENT the prompt with retrieved contexts
         formatted_prompt = augment(retrieved_contexts, request.prompt)
         # GENERATE the response using the model
