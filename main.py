@@ -9,8 +9,17 @@ from vector_store import ChromaVectorStore
 app = FastAPI()
 vector_store = ChromaVectorStore()
 
-model_name = "tiiuae/Falcon3-3B-Instruct"
-tokenizer_name = "tiiuae/Falcon3-3B-Instruct"
+models = {
+    "qwen-3b": "Qwen/Qwen2.5-3B-Instruct",
+    "meta-3b": "meta-llama/Llama-3.2-3B-Instruct",
+    "falcon-3b": "tiiuae/Falcon3-3B-Instruct",
+    "dseek-7b": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+}
+
+selected_model = "dseek-7b"
+
+model_name = models[selected_model]
+tokenizer_name = models[selected_model]
 
 # Load the model and tokenizer
 try:
