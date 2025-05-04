@@ -102,3 +102,11 @@ Content-Type: application/json
 {
     "prompt": "Compare the technical skills of Jordan Lee and Liam Brown."
 }
+
+### Find candidates interested in relocation
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Which candidates are interested in relocating?"
+}
