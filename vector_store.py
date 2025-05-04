@@ -1,6 +1,7 @@
 import chromadb
 from chromadb.utils import embedding_functions
 from chromadb.config import Settings
+import hashlib
 
 
 class ChromaVectorStore:
@@ -38,10 +39,10 @@ class ChromaVectorStore:
         # Prefix the document with candidate name for context
         full_doc = f"[Candidate: {candidate_name}] {text}"
 
-        # Generate a document ID
-        doc_id = f"doc_{len(self.collection.get()['ids']) + 1}"
+        # Generate a deterministic document ID based on the candidate name
+        doc_id = hashlib.sha256(candidate_name.encode()).hexdigest()
 
-        # Add document to Chroma
+        # Add document to Chroma (upsert behavior based on candidate name)
         self.collection.add(
             documents=[full_doc],
             ids=[doc_id],

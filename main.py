@@ -52,7 +52,13 @@ def retrieve(prompt):
 # AUGMENT the prompt with retrieved contexts
 def augment(retrieved_contexts, prompt):
     context_text = "\n".join(retrieved_contexts)
-    formatted_prompt = f"User: I have the following information:\n{context_text}\n\nWith this context, {prompt}\nAssistant: "
+    # Add instruction to the prompt template
+    formatted_prompt = (
+        f"User: I have the following information:\n{context_text}\n\n"
+        f"With this context, answer the following question: {prompt}\n"
+        f"IMPORTANT: If the question asks for a list of candidates, only output the candidate names found in the context, one per line, and nothing else.\n"
+        f"Assistant: "
+    )
     return formatted_prompt
 
 
@@ -85,15 +91,19 @@ class GenerateRequest(BaseModel):
 @app.post("/generate")
 async def generate_api(request: GenerateRequest):
     try:
-        prompt = request.prompt
         # RETRIEVE Context from Vector Store
-        retrieved_contexts = retrieve(prompt)
+        retrieved_contexts = retrieve(request.prompt)
         # AUGMENT the prompt with retrieved contexts
-        formatted_prompt = augment(retrieved_contexts, prompt)
+        formatted_prompt = augment(retrieved_contexts, request.prompt)
         # GENERATE the response using the model
         response = generate(formatted_prompt)
         return {"response": response}
     except Exception as e:
+        # Log the exception for debugging
+        print(f"Error in /generate endpoint: {e}")
+        import traceback
+
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
 
 
