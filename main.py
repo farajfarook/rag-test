@@ -3,13 +3,14 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
+from retrievers import retrieve_with_ai_optimized_query
 from vector_store import ChromaVectorStore
 
 app = FastAPI()
 vector_store = ChromaVectorStore()
 
-model_name = "tiiuae/falcon3-1b-instruct"
-tokenizer_name = "tiiuae/falcon3-1b-instruct"
+model_name = "tiiuae/Falcon3-3B-Instruct"
+tokenizer_name = "tiiuae/Falcon3-3B-Instruct"
 
 # Load the model and tokenizer
 try:
@@ -45,18 +46,24 @@ except Exception as e:
 
 # RETRIEVE Context from Vector Store
 def retrieve(prompt):
-    retrieved_contexts = vector_store.search(prompt)
+    # retrieved_contexts = vector_store.search(prompt)
+    retrieved_contexts = retrieve_with_ai_optimized_query(
+        prompt, tokenizer, model, vector_store
+    )
     return retrieved_contexts
 
 
 # AUGMENT the prompt with retrieved contexts
 def augment(retrieved_contexts, prompt):
-    context_text = "\n".join(retrieved_contexts)
+    if not retrieved_contexts:
+        print("No retrieved contexts available, using default context.")
+        context_text = "No relevant information found."
+    else:
+        context_text = "\n".join(retrieved_contexts)
     # Add instruction to the prompt template
     formatted_prompt = (
         f"User: I have the following information:\n{context_text}\n\n"
         f"With this context, answer the following question: {prompt}\n"
-        f"IMPORTANT: If the question asks for a list of candidates, only output the candidate names found in the context, one per line, and nothing else.\n"
         f"Assistant: "
     )
     return formatted_prompt
@@ -91,8 +98,8 @@ class GenerateRequest(BaseModel):
 @app.post("/generate")
 async def generate_api(request: GenerateRequest):
     try:
-        # RETRIEVE Context from Vector Store
-        retrieved_contexts = retrieve(request.prompt)
+        # RETRIEVE Context using AI-optimized query
+        retrieved_contexts = retrieve_advanced(request.prompt)
         # AUGMENT the prompt with retrieved contexts
         formatted_prompt = augment(retrieved_contexts, request.prompt)
         # GENERATE the response using the model

@@ -108,5 +108,5 @@ POST http://localhost:8000/generate
 Content-Type: application/json
 
 {
-    "prompt": "Which candidates are interested in relocating? I just need the names."
+    "prompt": "List all candidates who are interested in relocating?"
 }
