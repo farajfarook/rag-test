@@ -1,5 +1,4 @@
 import json
-from typing import List, Optional
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -43,17 +42,20 @@ except Exception as e:
     exit()
 
 
+# RETRIEVE Context from Vector Store
 def retrieve(prompt):
     retrieved_contexts = vector_store.search(prompt)
     return retrieved_contexts
 
 
+# AUGMENT the prompt with retrieved contexts
 def augment(retrieved_contexts, prompt):
     context_text = "\n".join(retrieved_contexts)
     formatted_prompt = f"User: I have the following information:\n{context_text}\n\nWith this context, {prompt}\nAssistant: "
     return formatted_prompt
 
 
+# GENERATE the response using the model
 def generate(formatted_prompt):
     input_ids = tokenizer.encode(formatted_prompt, return_tensors="pt").to(model.device)
     with torch.no_grad():
@@ -72,9 +74,16 @@ def generate(formatted_prompt):
     return response
 
 
+# Define request body model
+class GenerateRequest(BaseModel):
+    prompt: str
+
+
+# FastAPI endpoint for generating responses
 @app.post("/generate")
-async def generate(prompt: str):
+async def generate(request: GenerateRequest):
     try:
+        prompt = request.prompt
         # RETRIEVE Context from Vector Store
         retrieved_contexts = retrieve(prompt)
         # AUGMENT the prompt with retrieved contexts

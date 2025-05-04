@@ -28,8 +28,7 @@ POST http://localhost:8000/generate
 Content-Type: application/json
 
 {
-    "prompt": "list just the candidates names with experience in IFS",
-    "use_rag": true
+    "prompt": "list just the candidates names with experience in IFS"
 }
 
 ### Test cross candidate query
@@ -37,6 +36,69 @@ POST http://localhost:8000/generate
 Content-Type: application/json
 
 {
-    "prompt": "list just the candidate names who have worked at PageUp. Just the names. nothing else",
-    "use_rag": true
+    "prompt": "list just the candidate names who have worked at PageUp. Just the names. nothing else"
+}
+
+### Candidate Specific Experience
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Summarize Alex Thompson's experience in technology leadership."
+}
+
+### Find candidates with specific technical skills (e.g., C#)
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Which candidates have experience with C#?"
+}
+
+### Find candidates with experience in Cloud (e.g., AWS)
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "List candidates who mention AWS experience."
+}
+
+### Find candidates who worked at a specific company (e.g., carsales.com.au)
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Who previously worked at carsales.com.au?"
+}
+
+### Find candidates with management experience
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Identify candidates with roles like Engineering Manager or Team Lead."
+}
+
+### Find candidates WITHOUT specific experience (e.g., not based in Philippines)
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Which candidates are NOT based in the Philippines?"
+}
+
+### Find candidates matching multiple criteria (Senior Engineer at PageUp)
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "List the Senior Software Engineers currently at PageUp."
+}
+
+### Compare experience levels
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Compare the technical skills of Jordan Lee and Liam Brown."
 }
