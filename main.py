@@ -14,9 +14,10 @@ models = {
     "meta-3b": "meta-llama/Llama-3.2-3B-Instruct",
     "falcon-3b": "tiiuae/Falcon3-3B-Instruct",
     "dseek-7b": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "dseek-1.5b": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
 }
 
-selected_model = "dseek-7b"
+selected_model = "meta-3b"
 
 model_name = models[selected_model]
 tokenizer_name = models[selected_model]
@@ -85,7 +86,7 @@ def generate(formatted_prompt):
     with torch.no_grad():
         output = model.generate(
             input_ids,
-            max_new_tokens=200,
+            max_new_tokens=1000,
             temperature=0.7,
             top_p=0.9,
             num_return_sequences=1,
