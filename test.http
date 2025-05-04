@@ -55,6 +55,14 @@ Content-Type: application/json
     "prompt": "Identify candidates with roles like Engineering Manager or Team Lead."
 }
 
+### Find candidates with management experience
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "prompt": "Identify candidates with roles like Engineering Manager or Team Lead. And give me only the names in a JSON array. Dont give me anything else."
+}
+
 ### Find candidates WITHOUT specific experience (e.g., not based in Philippines)
 POST http://localhost:8000/generate
 Content-Type: application/json
